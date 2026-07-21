@@ -38,3 +38,8 @@ def root(req: ProrationRequest):
 @app.post("/proration")
 def proration(req: ProrationRequest):
     return calculate_charge(req)
+
+
+@app.post("/charge")
+def charge(req: ProrationRequest):
+    return calculate_charge(req)
